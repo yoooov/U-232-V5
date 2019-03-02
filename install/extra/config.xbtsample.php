@@ -32,7 +32,7 @@ if (get_magic_quotes_gpc() || get_magic_quotes_runtime() || ini_get('magic_quote
 die('PHP is configured incorrectly. Turn off magic quotes.');
 if (ini_get('register_long_arrays') || ini_get('register_globals') || ini_get('safe_mode'))
 die('PHP is configured incorrectly. Turn off safe_mode, register_globals and register_long_arrays.');
-define('EMAIL_CONFIRM', true);
+define('EMAIL_CONFIRM', false);
 define('SQL_DEBUG', 1);
 define('XBT_TRACKER', true);
 //==charset
